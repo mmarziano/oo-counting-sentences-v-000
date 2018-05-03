@@ -15,13 +15,9 @@ class String
   end
 
   def count_sentences
-    #delimiters = self.split(/\s*/)
     self.split(/[.?!]+/).count
-    #sentences = []
-    #delimiters.each do |x| 
-     #sentences << x if x == "." || x == "!" || x == "?" 
-   # end
-      #sentences.count
+    
+   
     end
    
   
