@@ -20,7 +20,7 @@ class String
     delimiters.each do |x| 
       sentences << x if x == "." || x == "!" || x == "?" 
     end
-      sentences
+      sentences.count
     end
    
   
