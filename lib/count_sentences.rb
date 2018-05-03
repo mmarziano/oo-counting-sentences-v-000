@@ -18,7 +18,7 @@ class String
     delimiters = self.split(/\s*,\s*/)
     sentences = []
     delimiters.each do |x| 
-      sentences << x if x != nil || x != "" || x != " " || x != "," || x != ", "
+      sentences << x if x == "." || x == "!" || x == "?" 
     end
       sentences.count
     end
