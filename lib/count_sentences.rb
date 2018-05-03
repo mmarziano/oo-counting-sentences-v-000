@@ -16,7 +16,7 @@ class String
 
   def count_sentences
     delimiters = self.split(/\w+/)
-    delimiters.map {|i| i.chomp}
+    delimiters.map {|i| i.reject if i == " " || i == "" || i == nil}
     #sentences = []
     #delimiters.each do |x| 
       #sentences << x if x != nil || x != "" || x != " " || x != "," || x != ", "
