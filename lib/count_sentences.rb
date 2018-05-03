@@ -17,7 +17,9 @@ class String
   def count_sentences
     delimiters = self.split(/\w+/)
     sentences = []
-    delimiters.each {|x| sentences << x if x == ". " || x == "? " || x == "! " x == "." || x == "?" || x == "!"}
+    delimiters.each do |x| 
+      sentences << x if x == ". " || x == "? " || x == "! " x == "." || x == "?" || x == "!"
+    end
       sentences
     end
    
