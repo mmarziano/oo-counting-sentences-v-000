@@ -20,7 +20,7 @@ class String
     #sentences = []
     #delimiters.each do |x| 
       #sentences << x if x != nil || x != "" || x != " " || x != "," || x != ", "
-    end
+    #end
       #sentences.count
     end
    
